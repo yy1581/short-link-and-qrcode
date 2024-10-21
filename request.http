@@ -1,0 +1,86 @@
+GET http://localhost:3000/api/qrcodes
+
+###
+
+POST http://localhost:3000/api/qrcodes
+Content-Type: application/json
+
+{
+  "title": "위키피디아 Next.js",
+  "url": "https://en.wikipedia.org/wiki/Next.js"
+}
+
+###
+
+PATCH http://localhost:3000/api/qrcodes
+
+###
+
+GET http://localhost:3000/api/qrcodes/abc
+
+###
+
+PATCH http://localhost:3000/api/qrcodes/abc
+Content-Type: application/json
+
+{
+  "title": "위키피디아 Next.js",
+  "url": "https://en.wikipedia.org/wiki/Next.js"
+}
+
+###
+
+POST http://localhost:3000/api/qrcodes/abc
+
+###
+
+POST http://localhost:3000/api/short-links/
+Content-Type: application/json
+
+{
+  "title": "codeit",
+  "url": "https://codeit.kr"
+}
+
+###
+
+GET http://localhost:3000/api/short-links/671280c2150c5333122240a5
+
+###
+
+GET http://localhost:3000/api/short-links/
+
+###
+
+PATCH http://localhost:3000/api/short-links/671280c2150c5333122240a5
+Content-Type: application/json
+
+{
+  "title": "codeit-edit-2"
+}
+
+###
+
+DELETE http://localhost:3000/api/short-links/67128236150c5333122240a9
+
+###
+
+POST http://localhost:3000/api/qrcodes
+Content-Type: application/json
+
+{ "title": "코드잇 커뮤니티", "url": "https://www.codeit.kr/community/general" }
+
+###
+
+GET http://localhost:3000/api/qrcodes/
+
+###
+
+PATCH http://localhost:3000/api/qrcodes/67128702150c5333122240b3
+Content-Type: application/json
+
+{ "title": "코드잇 커뮤니티!" }
+
+###
+
+DELETE http://localhost:3000/api/qrcodes/67128702150c5333122240b3
